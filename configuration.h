@@ -360,16 +360,16 @@ It also can add a delay to wait for spindle to run on full speed.
 #define STEP_DOUBLER_FREQUENCY 80000
 #define ALLOW_QUADSTEPPING 0
 #define DOUBLE_STEP_DELAY 0 // time in microseconds
-#define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_X 1000
-#define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_Y 1000
-#define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_Z 1000
-#define MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_X 100
-#define MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_Y 100
-#define MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_Z 100
+#define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_X 3000
+#define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_Y 3000
+#define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_Z 3000
+#define MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_X 3000
+#define MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_Y 3000
+#define MAX_TRAVEL_ACCELERATION_UNITS_PER_SQ_SECOND_Z 3000
 #define INTERPOLATE_ACCELERATION_WITH_Z 0
 #define ACCELERATION_FACTOR_TOP 100
-#define MAX_JERK 20
-#define MAX_ZJERK 0.3
+#define MAX_JERK 5
+#define MAX_ZJERK 5
 #define PRINTLINE_CACHE_SIZE 16
 #define MOVE_CACHE_LOW 10
 #define LOW_TICKS_PER_MOVE 250000
@@ -636,16 +636,16 @@ Values must be in range 1..255
     "driveSystem": 3,
     "xMaxSpeed": 200,
     "xHomingSpeed": 40,
-    "xTravelAcceleration": 100,
-    "xPrintAcceleration": 1000,
+    "xTravelAcceleration": 3000,
+    "xPrintAcceleration": 3000,
     "yMaxSpeed": 200,
     "yHomingSpeed": 40,
-    "yTravelAcceleration": 100,
-    "yPrintAcceleration": 1000,
+    "yTravelAcceleration": 3000,
+    "yPrintAcceleration": 3000,
     "zMaxSpeed": 200,
     "zHomingSpeed": 40,
-    "zTravelAcceleration": 100,
-    "zPrintAcceleration": 1000,
+    "zTravelAcceleration": 3000,
+    "zPrintAcceleration": 3000,
     "xMotor": {
         "name": "X motor",
         "step": "ORIG_X_STEP_PIN",
@@ -711,8 +711,8 @@ Values must be in range 1..255
     "stepDoublerFrequency": 80000,
     "allowQuadstepping": "0",
     "doubleStepDelay": 0,
-    "maxJerk": 20,
-    "maxZJerk": 0.3,
+    "maxJerk": 5,
+    "maxZJerk": 5,
     "moveCacheSize": 16,
     "moveCacheLow": 10,
     "lowTicksPerMove": 250000,
