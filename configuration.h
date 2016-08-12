@@ -402,8 +402,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define ENABLE_POWER_ON_STARTUP 1
 #define POWER_INVERTING 0
 #define KILL_METHOD 0
-#define ACK_WITH_LINENUMBER 1
-#define WAITING_IDENTIFIER "wait"
+#define ACK_WITH_LINENUMBER 0
 #define ECHO_ON_EXECUTE 1
 #define EEPROM_MODE 0
 #undef PS_ON_PIN
@@ -491,7 +490,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define FEATURE_CHECKSUM_FORCED 0
 #define FEATURE_FAN_CONTROL 1
 #define FEATURE_FAN2_CONTROL 0
-#define FEATURE_CONTROLLER 7
+#define FEATURE_CONTROLLER 0
 #define ADC_KEYPAD_PIN -1
 #define LANGUAGE_EN_ACTIVE 1
 #define LANGUAGE_DE_ACTIVE 0
@@ -718,8 +717,8 @@ Values must be in range 1..255
     "lowTicksPerMove": 250000,
     "enablePowerOnStartup": "1",
     "echoOnExecute": "1",
-    "sendWaits": "1",
-    "ackWithLineNumber": "1",
+    "sendWaits": "0",
+    "ackWithLineNumber": "0",
     "killMethod": 0,
     "useAdvance": "0",
     "useQuadraticAdvance": "0",
@@ -763,7 +762,7 @@ Values must be in range 1..255
     "enableZProbing": "0",
     "extrudeMaxLength": 160,
     "homeOrder": "HOME_ORDER_ZXY",
-    "featureController": 7,
+    "featureController": 0,
     "uiPrinterName": "Kossel XL",
     "uiPrinterCompany": "Home made",
     "uiPagesDuration": 4000,
