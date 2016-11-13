@@ -283,7 +283,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define Z_HOME_DIR 1
 #define X_MAX_LENGTH 200
 #define Y_MAX_LENGTH 200
-#define Z_MAX_LENGTH 302.85
+#define Z_MAX_LENGTH 302.45
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
@@ -399,11 +399,11 @@ It also can add a delay to wait for spindle to run on full speed.
 // ################# Misc. settings ##################
 
 #define BAUDRATE 115200
-#define ENABLE_POWER_ON_STARTUP 1
+#define ENABLE_POWER_ON_STARTUP 0
 #define POWER_INVERTING 0
 #define KILL_METHOD 0
 #define ACK_WITH_LINENUMBER 0
-#define ECHO_ON_EXECUTE 1
+#define ECHO_ON_EXECUTE 0
 #define EEPROM_MODE 0
 #undef PS_ON_PIN
 #define PS_ON_PIN ORIG_PS_ON_PIN
@@ -477,12 +477,12 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define AXISCOMP_TANXZ 0
 
 #ifndef SDSUPPORT  // Some boards have sd support on board. These define the values already in pins.h
-#define SDSUPPORT 1
+#define SDSUPPORT 0
 #undef SDCARDDETECT
 #define SDCARDDETECT -1
 #define SDCARDDETECTINVERTED 0
 #endif
-#define SD_EXTENDED_DIR 1 /** Show extended directory including file length. Don't use this with Pronterface! */
+#define SD_EXTENDED_DIR 0 /** Show extended directory including file length. Don't use this with Pronterface! */
 #define SD_RUN_ON_STOP ""
 #define SD_STOP_HEATER_AND_MOTORS_ON_STOP 1
 #define ARC_SUPPORT 1
@@ -674,7 +674,7 @@ Values must be in range 1..255
     "zMinPos": 0,
     "xLength": 200,
     "yLength": 200,
-    "zLength": 302.85,
+    "zLength": 302.45,
     "alwaysCheckEndstops": "1",
     "disableX": "0",
     "disableY": "0",
@@ -715,8 +715,8 @@ Values must be in range 1..255
     "moveCacheSize": 16,
     "moveCacheLow": 10,
     "lowTicksPerMove": 250000,
-    "enablePowerOnStartup": "1",
-    "echoOnExecute": "1",
+    "enablePowerOnStartup": "0",
+    "echoOnExecute": "0",
     "sendWaits": "0",
     "ackWithLineNumber": "0",
     "killMethod": 0,
@@ -854,7 +854,7 @@ Values must be in range 1..255
     "arcSupport": "1",
     "featureMemoryPositionWatchdog": "1",
     "forceChecksum": "0",
-    "sdExtendedDir": "1",
+    "sdExtendedDir": "0",
     "featureFanControl": "1",
     "fanPin": "ORIG_FAN_PIN",
     "featureFan2Control": "0",
@@ -888,7 +888,7 @@ Values must be in range 1..255
     "zProbeY3": 160,
     "zProbeSwitchingDistance": 1,
     "zProbeRepetitions": 1,
-    "sdSupport": "1",
+    "sdSupport": "0",
     "sdCardDetectPin": -1,
     "sdCardDetectInverted": "0",
     "uiStartScreenDelay": 1000,
