@@ -332,7 +332,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define DELTA_X_ENDSTOP_OFFSET_STEPS 40
 #define DELTA_Y_ENDSTOP_OFFSET_STEPS 21
 #define DELTA_Z_ENDSTOP_OFFSET_STEPS 28
-#define DELTA_FLOOR_SAFETY_MARGIN_MM 150
+#define DELTA_FLOOR_SAFETY_MARGIN_MM 100
 //#define SOFTWARE_LEVELING
 
 #define DELTASEGMENTS_PER_PRINTLINE 24
@@ -697,7 +697,7 @@ Values must be in range 1..255
     "deltaDiagonalCorrB": 0,
     "deltaDiagonalCorrC": 0,
     "deltaMaxRadius": 120,
-    "deltaFloorSafetyMarginMM": 150,
+    "deltaFloorSafetyMarginMM": 100,
     "deltaRadiusCorrA": 0,
     "deltaRadiusCorrB": 0,
     "deltaRadiusCorrC": 0,
