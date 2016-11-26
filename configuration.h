@@ -283,7 +283,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define Z_HOME_DIR 1
 #define X_MAX_LENGTH 200
 #define Y_MAX_LENGTH 200
-#define Z_MAX_LENGTH 302.45
+#define Z_MAX_LENGTH 302.32
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
@@ -324,14 +324,14 @@ It also can add a delay to wait for spindle to run on full speed.
 #define DELTA_DIAGONAL_CORRECTION_C 0
 #define END_EFFECTOR_HORIZONTAL_OFFSET 0
 #define CARRIAGE_HORIZONTAL_OFFSET 0
-#define DELTA_MAX_RADIUS 120
-#define ROD_RADIUS 180.45
-#define PRINTER_RADIUS 180.45
+#define DELTA_MAX_RADIUS 125
+#define ROD_RADIUS 180.0
+#define PRINTER_RADIUS 180.0
 #define DELTA_HOME_ON_POWER 0
 #define STEP_COUNTER
-#define DELTA_X_ENDSTOP_OFFSET_STEPS 40
-#define DELTA_Y_ENDSTOP_OFFSET_STEPS 21
-#define DELTA_Z_ENDSTOP_OFFSET_STEPS 28
+#define DELTA_X_ENDSTOP_OFFSET_STEPS 34
+#define DELTA_Y_ENDSTOP_OFFSET_STEPS 46
+#define DELTA_Z_ENDSTOP_OFFSET_STEPS 54
 #define DELTA_FLOOR_SAFETY_MARGIN_MM 100
 //#define SOFTWARE_LEVELING
 
@@ -358,7 +358,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define STEPPER_HIGH_DELAY 0
 #define DIRECTION_DELAY 0
 #define STEP_DOUBLER_FREQUENCY 80000
-#define ALLOW_QUADSTEPPING 0
+#define ALLOW_QUADSTEPPING 1
 #define DOUBLE_STEP_DELAY 0 // time in microseconds
 #define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_X 3000
 #define MAX_ACCELERATION_UNITS_PER_SQ_SECOND_Y 3000
@@ -369,7 +369,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define INTERPOLATE_ACCELERATION_WITH_Z 0
 #define ACCELERATION_FACTOR_TOP 100
 #define MAX_JERK 5
-#define MAX_ZJERK 5
+#define MAX_ZJERK 0.3
 #define PRINTLINE_CACHE_SIZE 16
 #define MOVE_CACHE_LOW 10
 #define LOW_TICKS_PER_MOVE 250000
@@ -674,7 +674,7 @@ Values must be in range 1..255
     "zMinPos": 0,
     "xLength": 200,
     "yLength": 200,
-    "zLength": 302.45,
+    "zLength": 302.32,
     "alwaysCheckEndstops": "1",
     "disableX": "0",
     "disableY": "0",
@@ -689,29 +689,29 @@ Values must be in range 1..255
     "deltaSegmentsPerSecondPrint": 180,
     "deltaSegmentsPerSecondTravel": 70,
     "deltaDiagonalRod": 317.5,
-    "deltaHorizontalRadius": 180.45,
+    "deltaHorizontalRadius": 180.0,
     "deltaAlphaA": 210,
     "deltaAlphaB": 330,
     "deltaAlphaC": 90,
     "deltaDiagonalCorrA": 0,
     "deltaDiagonalCorrB": 0,
     "deltaDiagonalCorrC": 0,
-    "deltaMaxRadius": 120,
+    "deltaMaxRadius": 125,
     "deltaFloorSafetyMarginMM": 100,
     "deltaRadiusCorrA": 0,
     "deltaRadiusCorrB": 0,
     "deltaRadiusCorrC": 0,
-    "deltaXOffsetSteps": 40,
-    "deltaYOffsetSteps": 21,
-    "deltaZOffsetSteps": 28,
+    "deltaXOffsetSteps": 34,
+    "deltaYOffsetSteps": 46,
+    "deltaZOffsetSteps": 54,
     "deltaSegmentsPerLine": 24,
     "stepperHighDelay": 0,
     "directionDelay": 0,
     "stepDoublerFrequency": 80000,
-    "allowQuadstepping": "0",
+    "allowQuadstepping": "1",
     "doubleStepDelay": 0,
     "maxJerk": 5,
-    "maxZJerk": 5,
+    "maxZJerk": 0.3,
     "moveCacheSize": 16,
     "moveCacheLow": 10,
     "lowTicksPerMove": 250000,
