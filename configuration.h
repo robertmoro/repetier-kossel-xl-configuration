@@ -283,7 +283,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define Z_HOME_DIR 1
 #define X_MAX_LENGTH 200
 #define Y_MAX_LENGTH 200
-#define Z_MAX_LENGTH 302.32
+#define Z_MAX_LENGTH 296.92
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
@@ -329,9 +329,9 @@ It also can add a delay to wait for spindle to run on full speed.
 #define PRINTER_RADIUS 180.0
 #define DELTA_HOME_ON_POWER 0
 #define STEP_COUNTER
-#define DELTA_X_ENDSTOP_OFFSET_STEPS 34
-#define DELTA_Y_ENDSTOP_OFFSET_STEPS 46
-#define DELTA_Z_ENDSTOP_OFFSET_STEPS 54
+#define DELTA_X_ENDSTOP_OFFSET_STEPS 50
+#define DELTA_Y_ENDSTOP_OFFSET_STEPS 80
+#define DELTA_Z_ENDSTOP_OFFSET_STEPS 77
 #define DELTA_FLOOR_SAFETY_MARGIN_MM 100
 //#define SOFTWARE_LEVELING
 
@@ -674,7 +674,7 @@ Values must be in range 1..255
     "zMinPos": 0,
     "xLength": 200,
     "yLength": 200,
-    "zLength": 302.32,
+    "zLength": 296.92,
     "alwaysCheckEndstops": "1",
     "disableX": "0",
     "disableY": "0",
@@ -701,9 +701,9 @@ Values must be in range 1..255
     "deltaRadiusCorrA": 0,
     "deltaRadiusCorrB": 0,
     "deltaRadiusCorrC": 0,
-    "deltaXOffsetSteps": 34,
-    "deltaYOffsetSteps": 46,
-    "deltaZOffsetSteps": 54,
+    "deltaXOffsetSteps": 50,
+    "deltaYOffsetSteps": 80,
+    "deltaZOffsetSteps": 77,
     "deltaSegmentsPerLine": 24,
     "stepperHighDelay": 0,
     "directionDelay": 0,
