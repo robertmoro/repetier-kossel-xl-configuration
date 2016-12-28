@@ -158,10 +158,10 @@
 
 // ############# Heated bed configuration ########################
 
-#define HAVE_HEATED_BED 0
+#define HAVE_HEATED_BED 1
 #define HEATED_BED_MAX_TEMP 120
 #define SKIP_M190_IF_WITHIN 3
-#define HEATED_BED_SENSOR_TYPE 1
+#define HEATED_BED_SENSOR_TYPE 14
 #define HEATED_BED_SENSOR_PIN TEMP_1_PIN
 #define HEATED_BED_HEATER_PIN HEATER_1_PIN
 #define HEATED_BED_SET_INTERVAL 5000
@@ -531,7 +531,7 @@ Values must be in range 1..255
 */
 #define BEEPER_SHORT_SEQUENCE 2,2
 #define BEEPER_LONG_SEQUENCE 8,8
-#define UI_SET_PRESET_HEATED_BED_TEMP_PLA 60
+#define UI_SET_PRESET_HEATED_BED_TEMP_PLA 30
 #define UI_SET_PRESET_EXTRUDER_TEMP_PLA   190
 #define UI_SET_PRESET_HEATED_BED_TEMP_ABS 110
 #define UI_SET_PRESET_EXTRUDER_TEMP_ABS   240
@@ -758,7 +758,7 @@ Values must be in range 1..255
     "servo2Pin": -1,
     "servo3Pin": -1,
     "featureWatchdog": "1",
-    "hasHeatedBed": "0",
+    "hasHeatedBed": "1",
     "enableZProbing": "0",
     "extrudeMaxLength": 160,
     "homeOrder": "HOME_ORDER_ZXY",
@@ -777,7 +777,7 @@ Values must be in range 1..255
     "uiKeyReduceRepeat": 50,
     "uiKeyMinRepeat": 50,
     "featureBeeper": "0",
-    "uiPresetBedTempPLA": 60,
+    "uiPresetBedTempPLA": 30,
     "uiPresetBedABS": 110,
     "uiPresetExtruderPLA": 190,
     "uiPresetExtruderABS": 240,
@@ -789,7 +789,7 @@ Values must be in range 1..255
     "uiExtruderRetractDistance": 3,
     "uiSpeeddependentPositioning": "0",
     "maxBedTemperature": 120,
-    "bedSensorType": 1,
+    "bedSensorType": 14,
     "bedSensorPin": "TEMP_1_PIN",
     "bedHeaterPin": "HEATER_1_PIN",
     "bedHeatManager": 0,
