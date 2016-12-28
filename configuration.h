@@ -477,9 +477,9 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define AXISCOMP_TANXZ 0
 
 #ifndef SDSUPPORT  // Some boards have sd support on board. These define the values already in pins.h
-#define SDSUPPORT 0
+#define SDSUPPORT 1
 #undef SDCARDDETECT
-#define SDCARDDETECT -1
+#define SDCARDDETECT 14
 #define SDCARDDETECTINVERTED 0
 #endif
 #define SD_EXTENDED_DIR 0 /** Show extended directory including file length. Don't use this with Pronterface! */
@@ -490,7 +490,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define FEATURE_CHECKSUM_FORCED 0
 #define FEATURE_FAN_CONTROL 1
 #define FEATURE_FAN2_CONTROL 0
-#define FEATURE_CONTROLLER 0
+#define FEATURE_CONTROLLER 1
 #define ADC_KEYPAD_PIN -1
 #define LANGUAGE_EN_ACTIVE 1
 #define LANGUAGE_DE_ACTIVE 0
@@ -518,7 +518,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define UI_KEY_FIRST_REPEAT 500
 #define UI_KEY_REDUCE_REPEAT 50
 #define UI_KEY_MIN_REPEAT 50
-#define FEATURE_BEEPER 0
+#define FEATURE_BEEPER 1
 #define CASE_LIGHTS_PIN -1
 #define CASE_LIGHT_DEFAULT_ON 1
 #define UI_START_SCREEN_DELAY 1000
@@ -762,7 +762,7 @@ Values must be in range 1..255
     "enableZProbing": "0",
     "extrudeMaxLength": 160,
     "homeOrder": "HOME_ORDER_ZXY",
-    "featureController": 0,
+    "featureController": 1,
     "uiPrinterName": "Kossel XL",
     "uiPrinterCompany": "Home made",
     "uiPagesDuration": 4000,
@@ -776,7 +776,7 @@ Values must be in range 1..255
     "uiKeyFirstRepeat": 500,
     "uiKeyReduceRepeat": 50,
     "uiKeyMinRepeat": 50,
-    "featureBeeper": "0",
+    "featureBeeper": "1",
     "uiPresetBedTempPLA": 30,
     "uiPresetBedABS": 110,
     "uiPresetExtruderPLA": 190,
@@ -888,8 +888,8 @@ Values must be in range 1..255
     "zProbeY3": 160,
     "zProbeSwitchingDistance": 1,
     "zProbeRepetitions": 1,
-    "sdSupport": "0",
-    "sdCardDetectPin": -1,
+    "sdSupport": "1",
+    "sdCardDetectPin": 14,
     "sdCardDetectInverted": "0",
     "uiStartScreenDelay": 1000,
     "xEndstopBackMove": 5,
