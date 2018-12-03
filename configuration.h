@@ -283,7 +283,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define Z_HOME_DIR 1
 #define X_MAX_LENGTH 200
 #define Y_MAX_LENGTH 200
-#define Z_MAX_LENGTH 296.92
+#define Z_MAX_LENGTH 297.05
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
@@ -325,8 +325,8 @@ It also can add a delay to wait for spindle to run on full speed.
 #define END_EFFECTOR_HORIZONTAL_OFFSET 0
 #define CARRIAGE_HORIZONTAL_OFFSET 0
 #define DELTA_MAX_RADIUS 125
-#define ROD_RADIUS 180.0
-#define PRINTER_RADIUS 180.0
+#define ROD_RADIUS 180
+#define PRINTER_RADIUS 180
 #define DELTA_HOME_ON_POWER 0
 #define STEP_COUNTER
 #define DELTA_X_ENDSTOP_OFFSET_STEPS 50
@@ -674,7 +674,7 @@ Values must be in range 1..255
     "zMinPos": 0,
     "xLength": 200,
     "yLength": 200,
-    "zLength": 296.92,
+    "zLength": 297.05,
     "alwaysCheckEndstops": "1",
     "disableX": "0",
     "disableY": "0",
@@ -689,7 +689,7 @@ Values must be in range 1..255
     "deltaSegmentsPerSecondPrint": 180,
     "deltaSegmentsPerSecondTravel": 70,
     "deltaDiagonalRod": 317.5,
-    "deltaHorizontalRadius": 180.0,
+    "deltaHorizontalRadius": 180,
     "deltaAlphaA": 210,
     "deltaAlphaB": 330,
     "deltaAlphaC": 90,
