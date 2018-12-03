@@ -307,8 +307,8 @@ It also can add a delay to wait for spindle to run on full speed.
 #define FEATURE_BABYSTEPPING 1
 #define BABYSTEP_MULTIPLICATOR 1
 
-#define DELTA_SEGMENTS_PER_SECOND_PRINT 180 // Move accurate setting for print moves
-#define DELTA_SEGMENTS_PER_SECOND_MOVE 70 // Less accurate setting for other moves
+#define DELTA_SEGMENTS_PER_SECOND_PRINT 600 // Move accurate setting for print moves
+#define DELTA_SEGMENTS_PER_SECOND_MOVE 600 // Less accurate setting for other moves
 #define EXACT_DELTA_MOVES 1
 
 // Delta settings
@@ -335,7 +335,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define DELTA_FLOOR_SAFETY_MARGIN_MM 100
 //#define SOFTWARE_LEVELING
 
-#define DELTASEGMENTS_PER_PRINTLINE 24
+#define DELTASEGMENTS_PER_PRINTLINE 100
 #define STEPPER_INACTIVE_TIME 360L
 #define MAX_INACTIVE_TIME 0L
 #define MAX_FEEDRATE_X 200
@@ -370,8 +370,8 @@ It also can add a delay to wait for spindle to run on full speed.
 #define ACCELERATION_FACTOR_TOP 100
 #define MAX_JERK 5
 #define MAX_ZJERK 0.3
-#define PRINTLINE_CACHE_SIZE 16
-#define MOVE_CACHE_LOW 10
+#define PRINTLINE_CACHE_SIZE 63
+#define MOVE_CACHE_LOW 20
 #define LOW_TICKS_PER_MOVE 250000
 #define EXTRUDER_SWITCH_XY_SPEED 100
 #define DUAL_X_AXIS 0
@@ -686,8 +686,8 @@ Values must be in range 1..255
     "xEndstopBack": 0,
     "yEndstopBack": 0,
     "zEndstopBack": 0,
-    "deltaSegmentsPerSecondPrint": 180,
-    "deltaSegmentsPerSecondTravel": 70,
+    "deltaSegmentsPerSecondPrint": 600,
+    "deltaSegmentsPerSecondTravel": 600,
     "deltaDiagonalRod": 317.5,
     "deltaHorizontalRadius": 180,
     "deltaAlphaA": 210,
@@ -704,7 +704,7 @@ Values must be in range 1..255
     "deltaXOffsetSteps": 50,
     "deltaYOffsetSteps": 80,
     "deltaZOffsetSteps": 77,
-    "deltaSegmentsPerLine": 24,
+    "deltaSegmentsPerLine": 100,
     "stepperHighDelay": 0,
     "directionDelay": 0,
     "stepDoublerFrequency": 80000,
@@ -712,8 +712,8 @@ Values must be in range 1..255
     "doubleStepDelay": 0,
     "maxJerk": 5,
     "maxZJerk": 0.3,
-    "moveCacheSize": 16,
-    "moveCacheLow": 10,
+    "moveCacheSize": 63,
+    "moveCacheLow": 20,
     "lowTicksPerMove": 250000,
     "enablePowerOnStartup": "0",
     "echoOnExecute": "0",
